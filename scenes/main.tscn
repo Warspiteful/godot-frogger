@@ -137,7 +137,6 @@ tile_data = PoolIntArray( -327696, 1610612741, 0, -327695, 1610612741, 0, -32769
 [node name="car_spawn" type="Position2D" parent="level" groups=[
 "car_spawn",
 ]]
-editor/display_folded = true
 position = Vector2( -263.476, 104.244 )
 script = ExtResource( 10 )
 
@@ -150,7 +149,6 @@ wait_time = 3.0
 [node name="car_spawn2" type="Position2D" parent="level" groups=[
 "car_spawn",
 ]]
-editor/display_folded = true
 position = Vector2( -263.476, 87.8548 )
 script = ExtResource( 10 )
 
@@ -163,7 +161,6 @@ wait_time = 3.0
 [node name="car_spawn3" type="Position2D" parent="level" groups=[
 "car_spawn",
 ]]
-editor/display_folded = true
 position = Vector2( -263.476, 71.7644 )
 script = ExtResource( 10 )
 
@@ -176,7 +173,6 @@ wait_time = 3.0
 [node name="car_spawn4" type="Position2D" parent="level" groups=[
 "car_spawn",
 ]]
-editor/display_folded = true
 position = Vector2( -263.526, 56.0396 )
 script = ExtResource( 10 )
 
@@ -189,7 +185,6 @@ wait_time = 3.0
 [node name="car_spawn5" type="Position2D" parent="level" groups=[
 "car_spawn",
 ]]
-editor/display_folded = true
 position = Vector2( -263.576, 39.6784 )
 script = ExtResource( 10 )
 
@@ -224,7 +219,6 @@ position = Vector2( -263.202, -71.7147 )
 dir = 1
 
 [node name="Water" type="Area2D" parent="level"]
-editor/display_folded = true
 position = Vector2( -4.92756, -3.53839 )
 scale = Vector2( 1.15399, 1.11057 )
 script = ExtResource( 12 )
@@ -235,7 +229,6 @@ scale = Vector2( 1, 0.928705 )
 shape = SubResource( 1 )
 
 [node name="spawn_goal" type="Node" parent="level"]
-editor/display_folded = true
 script = ExtResource( 13 )
 
 [node name="1" type="Position2D" parent="level/spawn_goal"]
@@ -280,7 +273,6 @@ position = Vector2( 0, -4 )
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 15 )
 hframes = 3
-frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2( 0.408913, 0.169438 )
