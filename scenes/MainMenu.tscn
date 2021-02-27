@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/more fonts/KiriFont.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/StartButton.gd" type="Script" id=2]
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -51,6 +52,8 @@ margin_right = 1030.72
 margin_bottom = 655.451
 custom_fonts/font = SubResource( 3 )
 text = "PLAY"
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]

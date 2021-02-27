@@ -8,4 +8,5 @@ func _ready():
 func _on_Goal_body_entered( body ):
 	if(body.is_in_group("player")):
 		game.level += 1
-		get_tree().reload_current_scene()
+		print("hello")
+		get_tree().change_scene("res://scenes/level2.tscn")

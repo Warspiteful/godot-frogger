@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Above Water.wav-1adbaebb7c0c227a3829d80801f6bf14.sample"
+
+[deps]
+
+source_file="res://assets/SOUND AND MUSIC/Above Water.wav"
+dest_files=[ "res://.import/Above Water.wav-1adbaebb7c0c227a3829d80801f6bf14.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

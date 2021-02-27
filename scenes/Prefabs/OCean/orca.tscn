@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/Car.gd" type="Script" id=1]
+[ext_resource path="res://assets/ART ASSETS/Ocean Assets/Ocean_Orca_1.png" type="Texture" id=2]
+[ext_resource path="res://assets/ART ASSETS/Ocean Assets/Ocean_Orca_3.png" type="Texture" id=3]
+[ext_resource path="res://assets/ART ASSETS/Ocean Assets/Ocean_Orca_2.png" type="Texture" id=4]
+
+[sub_resource type="AnimatedTexture" id=1]
+flags = 4
+frames = 4
+fps = 5.0
+frame_0/texture = ExtResource( 2 )
+frame_1/texture = ExtResource( 4 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 4 )
+frame_3/delay_sec = 0.0
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 62.335, 9.44959 )
+
+[node name="Car" type="KinematicBody2D" groups=[
+"car",
+]]
+scale = Vector2( 0.4, 0.4 )
+script = ExtResource( 1 )
+mov = 16
+vel = 1
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+texture = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/Car.gd" type="Script" id=1]
-[ext_resource path="res://sprites/cars.png" type="Texture" id=2]
+[ext_resource path="res://assets/ART ASSETS/City Assets/City_Car_Orange.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 12.0962, 4.85606 )
@@ -14,10 +14,8 @@ mov = 16
 vel = 7
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.4, 0.4 )
+scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
-vframes = 5
-hframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )

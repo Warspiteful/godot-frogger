@@ -47,6 +47,7 @@ func _physics_process(delta):
 		
 func gameover():
 	game.level = 1
+	print("HAHAHA")
 	get_tree().reload_current_scene()
 
 
@@ -66,5 +67,3 @@ func _on_AnimationPlayer_animation_finished( anim_name ):
 		else:
 			global_position = player_position
 
-func _on_VisibilityNotifier2D_screen_exited():
-	gameover()
