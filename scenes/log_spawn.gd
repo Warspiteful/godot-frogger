@@ -24,7 +24,7 @@ func set_timer():
 			get_node("Timer").wait_time = 9
 
 func generate_log():
-	var newt1 = get_tree().get_nodes_in_group("main")[0].orca1.instance()
+	var newt1 = get_tree().get_nodes_in_group("main")[0].log1.instance()
 	get_tree().get_nodes_in_group("level")[0].call_deferred("add_child", newt1)
 	if(dir == 0):
 		newt1.global_position = global_position
