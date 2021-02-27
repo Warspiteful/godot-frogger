@@ -9,7 +9,7 @@ func _ready():
 	if(direction == 0):
 		mov += (game.level-1) * mov / 6
 		mov = -mov
-		rotation_degrees = 180
+		get_node( "Sprite").set_flip_h( true )
 
 func _physics_process(delta):
 	var colisioned_object = move_and_collide(Vector2(mov,0) * vel * delta)

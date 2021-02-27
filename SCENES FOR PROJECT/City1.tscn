@@ -1,11 +1,11 @@
 [gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://scenes/main.gd" type="Script" id=1]
-[ext_resource path="res://scenes/Car1.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/Car2.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/Car3.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/Car4.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/Car5.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/Prefabs/OCean/jelly1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Prefabs/OCean/jelly3.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Prefabs/OCean/jelly2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Prefabs/OCean/jelly4.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/Prefabs/OCean/orca.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/Log.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/Goal.tscn" type="PackedScene" id=8]
 [ext_resource path="res://tiles/tiles.tres" type="TileSet" id=9]
@@ -109,8 +109,8 @@ tracks/1/keys = {
 ]]
 script = ExtResource( 1 )
 car1 = ExtResource( 2 )
-car2 = ExtResource( 3 )
-car3 = ExtResource( 4 )
+car2 = ExtResource( 4 )
+car3 = ExtResource( 3 )
 car4 = ExtResource( 5 )
 car5 = ExtResource( 6 )
 log1 = ExtResource( 7 )
